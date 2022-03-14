@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+
+}
+
+body{
+    background-color: #c8b6ff; 
+    font-family: 'Outfit', sans-serif;
+   
+}
+
+
+/* para el header */
+
+.header{
+    background-color: white;
+    height: 80px;
+    position: relative;
+    box-shadow: 0 2px 5px grey;
+    margin-bottom: 2rem;
+}
+
+.header__contenedor{
+    max-width: 1700px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    
+}
+li a{
+    text-decoration:none;
+    font-size: 17px;
+    padding: 0.5 rem 1 rem;
+    display:inline-block
+}
+
+.header__directorio{
+    display: flex;
+    gap: 1rem;
+}
+
+.logo{
+    height: 100%;
+    height: 5vh;
+}
+ 
+.grupo__contenido{
+    padding: 1rem 1rem
+}
+.contenido{
+    margin: 0 auto;
+    max-width: 1700px;
+    background-color: white;
+    min-height: 680px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;   
+    margin-bottom: 3rem;
+    box-shadow: 5px 10px 5px #8b70daa4;
+}
+
+.contenido__derecha{
+    width: 40%;
+    
+    
+}
+
+.contenido__izquierda{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items:center;
+   
+    
+
+}
+
+
+/* la tarjeta */
+
+.tarjeta{
+   /*  background-color: white;
+    border-radius: 10px;
+    width: 350px;
+    height: 550px;
+    margin: 0 auto;
+    border: 2px solid #f6f5f7;
+    box-shadow: 5px 10px 15px #c8b6ff; */     /* no logro poner esto sin que se rompa al achicarlo asi que lo cambie */
+  
+  
+    
+    
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ 
+   text-align: center;
+   width: 500px;
+}
+
+.tarjeta__vaca{
+    
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 1rem;   
+    margin: 0 auto; 
+}
+.tarjeta__texto{
+    margin-bottom: 1rem;
+}
+
+.tarjeta__link{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    border: #c8b6ff solid 1px;
+    background-color: #c8b6ff;
+    border-radius: 10px;
+    padding: 5px;
+   
+
+}
+
+
+/* la parte del medio */
+
+
+.contenido__titulo{
+    font-size: 60px;  
+}
+
+.contenido__sub{
+    font-size: 40px;
+    margin-bottom: 1.5rem;
+}
+
+.contenido__texto{
+    font-size: 20px;
+    max-width: 40rem;
+    line-height: 1.5;
+}
+
+/* medio */
+
+/* vamos con el footer */
+
+.pie{
+    background-color: white;
+    height: 80px;   
+}
+
+.pie__contenedor{
+    max-width: 1700px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+   
+
+/* tableta */
+@media screen and (max-width: 1240px ) {
+    .header{
+        height: auto;
+    }
+    .header__contenedor{
+        flex-direction: column;
+
+        
+    }
+
+    .header__directorio{
+        justify-content: center;
+    }
+    .contenido{
+        flex-direction: column;
+        width: auto;
+        padding: 2rem;
+        position: relative;
+        
+    }
+    .contenido__derecha, .contenido__izquierda{
+        width: 100%;
+    }
+
+    .contenido__izquierda{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .contenido__derecha{
+        margin-bottom: 1rem;  
+    }
+    
+    .contenedor__tarjeta{
+        display: flex;
+        position: relative;
+        justify-content:center ;
+        align-items: center;
+    }
+    
+    .tarjeta__textos{
+        padding: 1rem;
+    }
+    
+    .pie{
+        height: auto;
+    }
+   
+    
+}
+
+@media screen and (max-width:700px) {
+    .contenido p{
+        font-size: 16px;
+        
+    }
+    .header__directorio{
+        flex-wrap: wrap;
+    }
+    .pie__contenedor{
+        flex-direction: column;
+    }
+
+    .contenido__titulo{
+        font-size: 6vh;
+    }
+    
+}
+

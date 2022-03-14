@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background-color: #c8b6ff; 
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+
+
+
+
+.header{
+    background-color: white;
+    height: 80px;
+    position: relative;
+    box-shadow: 0 2px 5px grey;
+    margin-bottom: 2rem;
+}
+.header__contenedor{
+    max-width: 1700px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__directorio{
+    display: flex;
+    gap: 1rem;
+}
+.logo{
+    height: 100%;
+    height: 5vh;
+}
+
+
+ul{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-block;
+}
+
+
+
+
+
+/* el medio */
+
+
+.contenido{
+    background-color: white;
+    max-width: 1700px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    box-shadow: 5px 10px 5px #8b70daa4;   
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    text-align: center;
+
+}
+.contenido__titulo{
+   
+    font-size: 40px;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px #c8b6ff solid;
+    margin: 0 auto;
+}
+.pregunta{
+    font-size: 30px;
+    margin-top: 2rem;  
+   
+}
+
+.respuesta{
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+
+.pie{
+    background-color: white;
+    height: 80px;   
+}
+
+.pie__contenedor{
+    max-width: 1700px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px ) {
+    .header{
+        height: auto;
+    }
+    .header__contenedor{
+        flex-direction: column;
+
+        
+    }
+
+    .header__directorio{
+        justify-content: center;
+    }
+    .productos__grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4,1fr);
+        max-width: 1700px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .pie__contenedor{
+        flex-direction: column;
+    }
+    .header__directorio{
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+
+
+
+
+
