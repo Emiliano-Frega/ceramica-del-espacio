@@ -1,12 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: 0 !important;
 
 }
 
 body{
-    background-color: #c8b6ff; 
+    background-color: #c8b6ff !important; 
     font-family: 'Outfit', sans-serif;
    
 }
@@ -33,18 +33,25 @@ body{
 
 ul{
     list-style: none;
+    padding-left: 0;
+   
     
 }
 li a{
     text-decoration:none;
     font-size: 17px;
-    padding: 0.5 rem 1 rem;
-    display:inline-block
+    display:inline-block;
+    color:#a365c7
+}
+li a:hover{
+    color: black;
 }
 
 .header__directorio{
     display: flex;
     gap: 1rem;
+    margin-bottom: 0;
+    
 }
 
 .logo{
@@ -70,67 +77,62 @@ li a{
 }
 
 .contenido__derecha{
-    width: 40%;
+    width: 45%;
     
     
 }
 
 .contenido__izquierda{
-    width: 60%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-self: center;
     align-items:center;
-   
-    
-
 }
 
 
 /* la tarjeta */
 
 .tarjeta{
-   /*  background-color: white;
+
     border-radius: 10px;
-    width: 350px;
-    height: 550px;
+    height: auto;
     margin: 0 auto;
     border: 2px solid #f6f5f7;
-    box-shadow: 5px 10px 15px #c8b6ff; */     /* no logro poner esto sin que se rompa al achicarlo asi que lo cambie */
-  
-  
-    
-    
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
- 
-   text-align: center;
-   width: 500px;
+    box-shadow: 5px 5px 5px rgb(143, 143, 143);  
+    padding: 10px; 
+    display:inline-block;
+    justify-content: center;
+    margin: 0 auto;
+    width: 400px !important;
+    text-align: center;
 }
 
-.tarjeta__vaca{
-    
-    width: 100%;
-    border-radius: 10px;
-    padding-bottom: 1rem;   
-    margin: 0 auto; 
-}
 .tarjeta__texto{
     margin-bottom: 1rem;
+    font-size: 26px;
 }
 
 .tarjeta__link{
-    font-size: 25px;
+    font-size: 23px;
     text-decoration: none;
     color: white;
     border: #c8b6ff solid 1px;
     background-color: #c8b6ff;
     border-radius: 10px;
     padding: 5px;
-   
-
+}
+.animate__animated .animate__pulse{
+    --animate-duration: 1s;
+    --animate-infinite:infinite;
+}
+.tarjeta__link:hover{
+    color: black;
+    background-color: aliceblue;
+}
+.imagen__carousel{
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -169,8 +171,9 @@ li a{
     justify-content: space-between;
     align-items: center;
 }
-
-   
+p{
+    margin-bottom: 0 !important;
+}
 
 /* tableta */
 @media screen and (max-width: 1240px ) {
