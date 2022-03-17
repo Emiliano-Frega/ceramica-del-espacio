@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #c8b6ff; 
+    background-color: #c8b6ff !important; 
     font-family: 'Outfit', sans-serif;
     
 }
@@ -28,6 +28,7 @@ body{
 
 ul{
     list-style: none;
+    padding-left: 0;
     
 }
 
@@ -35,11 +36,16 @@ li a{
     text-decoration:none;
     font-size: 17px;
     padding: 0.5;
-    display:inline-block
+    display:inline-block;
+    color:#a365c7
+}
+li a:hover{
+    color: black;
 }
 .header__directorio{
     display: flex;
     gap: 1rem;
+    margin-bottom: 0;
 }
 .logo{
     height: 100%;
@@ -55,13 +61,15 @@ li a{
 /* el medio */   
 
 .contenido{
+    margin: 0 auto !important;
     margin: 2rem;
     max-width: 1700px;
     border-radius: 10px;
     box-shadow: 5px 10px 5px #8b70daa4 ;
     background-color: white;
     padding: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem !important;
+   
    position: relative;
 }
 
@@ -76,6 +84,7 @@ li a{
 .contenido__sub{
     text-align: center;
     font-size: 25px;
+    margin-bottom: 3rem;
      
 }
 
@@ -88,53 +97,20 @@ li a{
     align-items: center;
     
 }
-
-
-
  .formulario{
-     text-align: center;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     background-color:#c8b6ff;
-     border-radius: 10px;
-     padding: 2rem;
-     margin: 2rem;
-     max-width: 500px;
-     width: 100%;
-     color: white;
-     font-size: 20px;
-     box-shadow: 5px 10px 5px #a587ff;
      
- }
-
-.formulario__item{
-    padding: 5px;
-}
-
-
- .formulario__mensaje{
-    
-     padding: 5px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: solid;
+     background-color: #c8b6ff;
+     border-radius: 10px;
+     margin-bottom: 3rem;    
+     box-shadow: 0px 2px 5px black;
+     position: relative;
      display: flex;
      flex-direction: column;
  }
 
- input{
-     display:flex;
-     margin: 5px;
- }
- textarea{
-     border-radius: 10px;
-     color: grey;
-     padding: 10px;
-     margin-top: 5px;
-     max-width: 150px;
-     
- }
-
- 
  h4{
      font-size: 19px;
   
@@ -142,8 +118,20 @@ li a{
 
  .texto__bajo__form{
      display: flex;
+     flex-direction: column;
      justify-content: center;
      align-items: center;
+ }
+ .iconos{
+     font-size: 40px;
+     
+ }
+ .icono__font:hover{
+     color: black !important;
+     
+ }
+ .icono__font{
+     color: #a587ff !important;
  }
 
  .pie{
