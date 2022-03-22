@@ -52,14 +52,7 @@ li a:hover{
     height: 5vh;
     
 }
-
-
-
-
-
-
 /* el medio */   
-
 .contenido{
     margin: 0 auto !important;
     margin: 2rem;
@@ -72,50 +65,37 @@ li a:hover{
    
    position: relative;
 }
-
 .contenido__titulo{
     text-align: center;
-   
     font-size: 60px;
     margin-bottom: 40px;
-  
-
 }
 .contenido__sub{
     text-align: center;
     font-size: 25px;
     margin-bottom: 3rem;
-     
 }
-
-
-
 .contenedor__formulario{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center; 
 }
  .formulario{
-     
     margin: 0 auto;
     padding: 1rem;
     border: solid;
-     background-color: #c8b6ff;
-     border-radius: 10px;
-     margin-bottom: 3rem;    
-     box-shadow: 0px 2px 5px black;
-     position: relative;
-     display: flex;
-     flex-direction: column;
+    background-color: #c8b6ff;
+    border-radius: 10px;
+    margin-bottom: 3rem;    
+    box-shadow: 0px 2px 5px black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
  }
-
  h4{
      font-size: 19px;
-  
  }
-
  .texto__bajo__form{
      display: flex;
      flex-direction: column;
@@ -127,8 +107,7 @@ li a:hover{
      
  }
  .icono__font:hover{
-     color: black !important;
-     
+     color: black !important; 
  }
  .icono__font{
      color: #a587ff !important;
@@ -138,7 +117,6 @@ li a:hover{
     background-color: white;
     height: 80px;   
 }
-
 .pie__contenedor{
     max-width: 1700px;
     margin: 0 auto;
@@ -147,22 +125,16 @@ li a:hover{
     justify-content: space-between;
     align-items: center;
 }
-
 @media screen and (max-width: 700px ) {
     .header{
         height: auto;
     }
     .header__contenedor{
-        flex-direction: column;
-
-        
+        flex-direction: column;      
     }
-
     .header__directorio{
         justify-content: center;
     }
-    
-   
 }
 @media screen and (max-width:500px){
     .pie__contenedor{
@@ -171,9 +143,7 @@ li a:hover{
     .header__directorio{
         flex-wrap: wrap;
     }
-
 }
-
 @media screen and (max-width:350px){
     .contenido__titulo{
         font-size: 4vh;

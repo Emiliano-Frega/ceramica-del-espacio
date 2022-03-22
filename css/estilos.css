@@ -158,7 +158,7 @@ li a:hover{
     padding-top: 2rem;
 }
 .contenido__productos{
-    background-image: url(/imagenes/fondo4.png);
+    background-image: url(../imagenes/fondo4.png) !important;
 }
 /*----------------------- laptop sin que se rompa el titulo--------------------- */
 @media screen and (max-width: 1500px ) {
