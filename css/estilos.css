@@ -148,8 +148,8 @@ li a:hover{
 .imagen__producto:hover{
     transform: scale(1.4);
     box-shadow: 0px 0px 30px -15px rgba(0,0,0,0.5);
-    transition: 1500ms;
-    animation-delay: 1300ms;
+    transition: 750ms;
+    
 }
 .h2{
     text-align: center;
@@ -202,6 +202,13 @@ li a:hover{
     .pie{
         height: auto;
     }   
+    .contenido{
+        background-image: url(../imagenes/foondo.chico.png);
+    }
+
+    .imagen__producto:hover{
+        transform: none;
+    }
 }
 /* -------------------------------chelular-------------------------- */
 @media screen and (max-width:700px) {
@@ -217,4 +224,5 @@ li a:hover{
     .contenido__titulo{
         font-size: 6vh;
     }
+   
 }
