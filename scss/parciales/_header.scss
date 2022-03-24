@@ -1,0 +1,36 @@
+.header{
+    background-color: white;
+    height: 80px;
+    position: relative;
+    box-shadow: 0 2px 5px grey;
+    margin-bottom: 3.3rem;
+}
+.header__contenedor{
+    max-width: 1700px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    padding-left: 0;   
+}
+li a{
+    text-decoration:none;
+    font-size: 17px;
+    display:inline-block;
+    color:$colorPagina 
+}
+li a:hover{
+    color: black;
+}
+.header__directorio{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0;  
+}
+.logo{
+    height: 5vh;
+}

@@ -1,0 +1,85 @@
+/*----------------------- laptop sin que se rompa el titulo--------------------- */
+@media screen and (max-width: 1500px ) {
+    .contenido__titulo{
+        text-align: center;
+    }
+}
+/*---------------- tableta----------------- */
+@media screen and (max-width: 1240px ) {
+    .header{
+        height: auto;
+    }
+    .header__contenedor{
+        flex-direction: column;  
+    }
+    .header__directorio{
+        justify-content: center;
+    }
+    .contenido{
+        flex-direction: column;
+        width: auto;
+        padding: 2rem;
+        position: relative;  
+    }
+    .contenido__derecha, .contenido__izquierda{
+        width: 100%;
+    }
+    .contenido__izquierda{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .contenido__derecha{
+        margin-bottom: 1rem;  
+    }
+    .contenedor__tarjeta{
+        display: flex;
+        position: relative;
+        justify-content:center ;
+        align-items: center;
+    }
+    .pie{
+        height: auto;
+    }   
+    .contenido{
+        background-image: url(../imagenes/foondo.chico.png);
+    }
+    .imagen__producto:hover{
+        transform: none;
+    }
+}
+/* -------------------------------chelular-------------------------- */
+@media screen and (max-width:700px) {
+    .contenido p{
+        font-size: 16px; 
+    }
+    .header__directorio{
+        flex-wrap: wrap;
+    }
+    .pie__contenedor{
+        flex-direction: column;
+    }
+    .contenido__titulo{
+        font-size: 6vh;
+    }
+    .imagenes--nosotros{
+        flex-direction: column;
+    }
+    .contenido__imagen{
+        width: 100%;
+    }
+}
+@media screen and (max-width:580px){
+    .video__instagram{
+        display: none;
+    }
+    .iconos{
+        font-size: 40px;
+        display: inline-block;
+    }
+    .iconos i{
+        color: black;
+    }
+    .iconos i:hover{
+        color: black;
+    }
+}
