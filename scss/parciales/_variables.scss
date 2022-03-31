@@ -1,2 +1,21 @@
 $colorPagina:#c8b6ff ;
 $colorFondo: white;
+
+/* tamaños fuentes */
+$fuente: 10px;
+
+$fuentes: (
+    s: $fuente * 1,
+    m: $fuente * 2,
+    l: $fuente * 2.5,
+    xl: $fuente * 3,
+    xxl: $fuente * 4,
+    xxxl: $fuente * 6
+);
+
+@each $clave, $valor in $fuentes {
+    .font-#{$clave} {
+        font-size: $valor;
+    }
+}
+

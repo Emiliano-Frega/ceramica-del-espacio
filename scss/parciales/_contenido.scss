@@ -1,3 +1,10 @@
+@mixin crearFlex($eje-principal, $eje-secundiario) {
+    display: flex;
+    justify-content: $eje-principal;
+    align-items: $eje-secundiario;
+}
+
+/* ---------------------------------- */
 .contenido{
     margin: 0 auto;
     max-width: 1700px !important;
@@ -9,12 +16,22 @@
     border-radius: 10px;
     margin-bottom: 3.3rem;
     box-shadow: 2px 5px 5px grey;
+    padding-top: 2rem;
 }
-.titulo__productos{
-    text-align: center;
-    font-size: 60px;
+.contenido__titulo{
+    font-size:40px;
+    border-bottom: $colorPagina  solid 1px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
     padding: 1rem;
 }
+.contenido__sub{
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .contenido__texto{
     font-size: 20px;
     max-width: 40rem;
@@ -22,17 +39,13 @@
 }
 .contenido__derecha{
     width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
+    @include crearFlex(center,center);
+    padding-bottom: 2rem;
 }
 .contenido__izquierda{
     width: 60%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+    @include crearFlex(center,center);
+    flex-direction: column;
 }
 .tarjeta{
     display: flex;
@@ -67,9 +80,18 @@
     border: $colorPagina  solid 1px;
 }
 /* -----productos-------------------------- */
+.titulo__productos{
+    font-size: 40px;
+    padding: 1rem;
+    max-width: 600px;
+    width: 100%;
+    border-bottom: $colorPagina solid 1px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
 .imagen__producto{
     width: 100%;
-    height: 550px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -85,9 +107,7 @@
     box-shadow: 0px 0px 30px -15px rgba(0,0,0,0.5);
     transition: 750ms; 
 }
-.h2{
-    text-align: center;
-}
+
 .h1{
     padding-top: 2rem;
 }
@@ -95,13 +115,7 @@
     background-image: url(../imagenes/fondo4.png) !important;
 }
 /* ---------preguntas------------ */
-.contenido__titulo{
-    font-size:40px !important;
-    border-bottom: $colorPagina  solid 1px;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 1rem;
-}
+
 .pregunta{
     font-size: 30px;
     margin-top: 2rem;
@@ -117,8 +131,7 @@
   }
 /* ----------Nosotros------------- */
 .imagenes--nosotros{
-    display: flex;
-    justify-content: space-between;
+    @include crearFlex(space-between,stretch);
     max-width: 1500px;
     gap: 15px;
     margin-bottom: 2rem;
@@ -141,11 +154,9 @@
     display: none;
 }
 .contenido--nosotros{
-    display: flex;
+    @include crearFlex(center,center);
     flex-direction: column;
     text-align: center;
-    justify-content: center;
-    align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
     max-width: 1700px;
@@ -170,7 +181,7 @@
     flex-direction: column;
  }
   h4{
-     font-size: 19px;
+     font-size: 20px;
  }
  .icono__font{
      color: black;
@@ -180,7 +191,4 @@
  .icono__font:hover{
      color: $colorPagina ;
  }
- .contenido__sub{
-     font-size: 25px;
-
- }
+ 
