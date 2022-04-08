@@ -45,6 +45,8 @@ body {
     display: flex;
     gap: 1rem;
     margin-bottom: 0; }
+  .header--celular {
+    display: none; }
 
 ul {
   list-style: none;
@@ -304,7 +306,11 @@ h4 {
   .imagenes--nosotros {
     flex-direction: column; }
   .contenido__imagen {
-    width: 100%; } }
+    width: 100%; }
+  .header--celular {
+    display: flex; }
+  .header--compu {
+    display: none; } }
 
 @media screen and (max-width: 580px) {
   .video__instagram {
