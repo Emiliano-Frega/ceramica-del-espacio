@@ -267,6 +267,8 @@ h4 {
     height: auto; }
   .header__contenedor {
     flex-direction: column; }
+  li a {
+    margin-bottom: 10px; }
   .header__directorio {
     justify-content: center; }
   .contenido {
