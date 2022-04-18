@@ -186,6 +186,18 @@
      margin: 5px;
  }
  .icono__font:hover{
-     color: $colorPagina ;
+     color: $colorNav ;
+ }
+ .boton__formulario{
+     background-color: #d173ff;
+     border: 1px solid black ;
+     color: white;
+     box-shadow: 2px 3px 2px grey;
+     &:hover{
+         background-color: black;
+         color: white;
+         border: 1px solid black;
+
+     }
  }
  
