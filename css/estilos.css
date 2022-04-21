@@ -63,6 +63,18 @@ li a {
 .logo {
   height: 5vh; }
 
+#btn-menu {
+  display: none; }
+
+.header label {
+  display: none;
+  font-size: 30px;
+  padding: 10px;
+  color: #c862ff; }
+  .header label:hover {
+    cursor: pointer;
+    color: black; }
+
 /* ---------------------------------- */
 .contenido {
   margin: 0 auto;
@@ -220,6 +232,21 @@ li a {
 .iconos--nosotros {
   display: none; }
 
+.video__proceso {
+  height: 600px; }
+
+.video__proceso video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; }
+
+.link__proceso {
+  text-decoration: none;
+  color: #c862ff; }
+  .link__proceso:hover {
+    color: black; }
+
 /* ---------contacto------- */
 .formulario {
   margin: 0 auto;
@@ -318,11 +345,7 @@ h4 {
   .imagenes--nosotros {
     flex-direction: column; }
   .contenido__imagen {
-    width: 100%; }
-  .header--celular {
-    display: flex; }
-  .header--compu {
-    display: none; } }
+    width: 100%; } }
 
 @media screen and (max-width: 580px) {
   .video__instagram {

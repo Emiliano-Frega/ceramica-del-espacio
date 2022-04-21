@@ -37,3 +37,17 @@ li a{
 .logo{
     height: 5vh;
 }
+#btn-menu{
+    display: none;
+}
+.header label{
+    display: none;
+    font-size: 30px;
+    padding: 10px;
+    color: $colorNav;
+    &:hover{
+        cursor: pointer;
+        color: black;
+    }
+}
+

@@ -49,8 +49,6 @@
     .imagen__producto:hover{
         transform: none;
     }
-   
-
 }
 /* -------------------------------chelular-------------------------- */
 @media screen and (max-width:700px) {
@@ -71,12 +69,6 @@
     }
     .contenido__imagen{
         width: 100%;
-    }
-    .header--celular{
-        display: flex;
-    }
-    .header--compu{
-        display: none;
     }
 }
 @media screen and (max-width:580px){

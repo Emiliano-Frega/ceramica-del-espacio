@@ -164,6 +164,22 @@
 .iconos--nosotros{
     display: none;
 }
+.video__proceso{
+    height: 600px;
+}
+.video__proceso video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.link__proceso{
+    text-decoration: none;
+    color: $colorNav;
+    &:hover{
+        color: black;
+    }
+}
 /* ---------contacto------- */
 .formulario{
     margin: 0 auto;
