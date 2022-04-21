@@ -12,6 +12,17 @@ Partimos desde crear un wireframe que nos da una idea de como sera el sitio web.
 despues utilizando CSS y SCSS le aplicamos los estilos y creamos algunas variables. Tambien utilice algunos elementros de la libreria de Bootstrap
 para el carousel de la pagina de inicio y el formulario. 
 El sitio tambien cuenta con caracteristicas responsivas y optimizacion de SEO.
+# Cambios realizados al 30/03.
+1.Reduje un poco el tamaño de las imágenes
+2. le puse los alt a todas. 
+3. Cambie el texto de relleno del inicio. 
+4. Puse los meta description y keywords 
+5. cambie un poco el color del nav para que genere mas contraste e hice mas grande la fuente. 
+6. Aparte agregue un mixin y un map a las variables para hacer unas clases de tamaños para las fuentes. 
+7. Mejore el anidamiento de scss. 
+8. Tambien cambie en el inicio el link para ir a productos. 
+
 # Complicaciones.
 En el camino de realizar este sitio web, se me generaron varias complicaciones pero estoy bastante contento de poder haber sobrellevado la gran mayoria de ellas.
-Estoy emocionado por el camino que queda por seguir recorriendo. 
+Estoy emocionado por el camino que queda por seguir recorriendo.
+
