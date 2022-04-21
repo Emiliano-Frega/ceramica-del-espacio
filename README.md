@@ -13,7 +13,8 @@ despues utilizando CSS y SCSS le aplicamos los estilos y creamos algunas variabl
 para el carousel de la pagina de inicio y el formulario. 
 El sitio tambien cuenta con caracteristicas responsivas y optimizacion de SEO.
 # Cambios realizados al 30/03.
-1.Reduje un poco el tamaño de las imágenes
+
+1. Reduje un poco el tamaño de las imágenes
 2. le puse los alt a todas. 
 3. Cambie el texto de relleno del inicio. 
 4. Puse los meta description y keywords 
